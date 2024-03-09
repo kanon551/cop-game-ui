@@ -90,7 +90,13 @@ export interface CityWithVehicleOptions {
 export interface updateInventoryPayload {
   copId: string;
   vehicleKind: string;
-  copVehicleRelations: ElectricVehicle[]
+  copVehicleRelations: CityWithVehicleOptions[]
+}
+
+export interface chosenData {
+  copId: string;
+  selectedVehicleKind: string;
+  selectedCity: string;
 }
 
 
